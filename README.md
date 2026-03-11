@@ -114,7 +114,7 @@ Receive an array of trending repositories.
 
 **URL Endpoint:**
 
-https://ghapi.huchen.dev/repositories?language=javascript&since=weekly
+https://github-trending-api-ten.vercel.app/repositories?language=javascript&since=weekly
 
 **Parameters:**
 
@@ -158,7 +158,7 @@ Receive an array of trending developers.
 
 **URL Endpoint:**
 
-https://ghapi.huchen.dev/developers?language=javascript&since=weekly
+https://github-trending-api-ten.vercel.app/developers?language=javascript&since=weekly
 
 **Parameters:**
 
@@ -190,7 +190,7 @@ https://ghapi.huchen.dev/developers?language=javascript&since=weekly
 
 **URL Endpoint:**
 
-https://ghapi.huchen.dev/languages
+https://github-trending-api-ten.vercel.app/languages
 
 **Response:**
 
@@ -219,7 +219,7 @@ https://ghapi.huchen.dev/languages
 
 **URL Endpoint:**
 
-https://ghapi.huchen.dev/spoken_languages
+https://github-trending-api-ten.vercel.app/spoken_languages
 
 **Response:**
 

@@ -1,0 +1,4 @@
+name = "github-trending-api"
+main = "cloudflare-worker.js"
+compatibility_date = "2023-01-01"
+compatibility_flags = ["nodejs_compat"]

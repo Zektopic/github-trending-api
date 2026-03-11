@@ -52,6 +52,9 @@
     - [spokenLanguages](#spokenlanguages)
     - [fetchRepositories(params)](#fetchrepositoriesparams)
     - [fetchDevelopers(params)](#fetchdevelopersparams)
+- [Deployment](#deployment)
+  - [Vercel](#vercel)
+  - [Cloudflare Workers](#cloudflare-workers)
 - [docker](#docker)
 - [Contributors](#contributors)
   - [Code Contributors](#code-contributors)
@@ -264,7 +267,7 @@ import {
 fetchRepositories({ language: 'ruby', since: 'monthly' }).then(
   (repositories) => {
     console.log(repositories);
-  }
+  },
 );
 
 fetchDevelopers({ language: 'javascript' }).then((developers) => {
@@ -391,6 +394,36 @@ Receive an array of trending developers.
   ...
 ]
 ```
+
+## Deployment
+
+This API is designed to run completely serverless, without any backend.
+
+### Vercel
+
+You can easily deploy your own instance of this API to [Vercel](https://vercel.com). The repository contains Vercel serverless functions inside the `api/` directory.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fhuchenme%2Fgithub-trending-api)
+
+1. Fork this repository or click the **Deploy with Vercel** button above.
+2. Vercel will automatically detect the configuration in `vercel.json` and build the API routes.
+
+### Cloudflare Workers
+
+You can also deploy this API using [Cloudflare Workers](https://workers.cloudflare.com/). A ready-to-use `cloudflare-worker.js` and `wrangler.toml` are included.
+
+1. Ensure you have [`wrangler`](https://developers.cloudflare.com/workers/wrangler/) installed:
+   ```sh
+   npm install -g wrangler
+   ```
+2. Authenticate wrangler with your Cloudflare account:
+   ```sh
+   wrangler login
+   ```
+3. Deploy the worker:
+   ```sh
+   wrangler deploy
+   ```
 
 ## docker
 

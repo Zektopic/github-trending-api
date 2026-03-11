@@ -1,3 +1,10 @@
 {
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/", "destination": "/api/repositories" },
+    { "source": "/repositories", "destination": "/api/repositories" },
+    { "source": "/developers", "destination": "/api/developers" },
+    { "source": "/languages", "destination": "/api/languages" },
+    { "source": "/spoken_languages", "destination": "/api/spoken_languages" }
+  ]
 }
